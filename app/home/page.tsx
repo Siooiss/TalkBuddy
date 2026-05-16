@@ -385,7 +385,7 @@ function RecordsTab() {
         ) : (
           <div className="bg-card rounded-2xl border border-border overflow-hidden">
             {recent.map((r, i) => (
-              <Link key={r.id} href={`/records/${r.id}`}>
+              <Link key={r.id} href={`/records/detail?id=${r.id}`}>
                 <div
                   className={`p-4 flex items-center gap-3 hover:bg-secondary/30 transition-colors ${
                     i !== recent.length - 1 ? "border-b border-border" : ""

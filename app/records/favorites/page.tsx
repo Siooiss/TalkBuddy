@@ -74,7 +74,7 @@ export default function FavoritesPage() {
               transition={{ delay: i * 0.04 }}
               className="relative"
             >
-              <Link href={`/records/${r.id}`}>
+              <Link href={`/records/detail?id=${r.id}`}>
                 <div className="bg-card rounded-2xl p-4 shadow-sm border border-border pr-14 hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-xl bg-morandi-beige flex items-center justify-center flex-shrink-0">
